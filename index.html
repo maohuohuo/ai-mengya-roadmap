@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="从 Vue 与 Node.js 出发，12 周成为 AI 全栈工程师的学习打卡计划。" />
+  <title>AI 萌芽计划｜12 周学习打卡</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav><a class="brand" href="#top"><b>✦</b> AI 萌芽计划</a><span class="pill">📍 杭州 · 每天 1—2 小时</span></nav>
+    <div class="hero-grid" id="top">
+      <div><span class="kicker">FROM WEB DEV TO AI BUILDER</span><h1>把会写网页的你，<br>升级成 <em>AI 全栈工程师</em></h1><p>12 周成长路线，从 Vue / Node.js 出发，逐步拿下 Python、RAG 与 Agent。每天前进一点点，去杭州遇见你的 AI 新工作。</p><a class="start" href="#roadmap">开始今日任务 →</a><small>🌱 所有勾选会自动保存</small></div>
+      <aside class="mascot"><i>✦</i><div id="mascot">🥚</div><strong id="cheer">一起出发吧！</strong><p>当前阶段 <b id="currentWeek">第 1 周</b></p></aside>
+    </div>
+  </header>
+  <section class="progress">
+    <div><span class="kicker">MY PROGRESS</span><h2>你的成长进度</h2><p id="progressText">完成第一项任务，让旅程开始吧。</p></div>
+    <div class="stats"><div class="ring" id="ring"><span><b id="percent">0%</b><small>总进度</small></span></div><div><b><span id="done">0</span><small> / 48</small></b><small>完成任务</small></div><div><b><span id="weeks">0</span><small> / 12</small></b><small>完成周数</small></div></div>
+    <div class="track"><span id="totalBar"></span></div>
+  </section>
+  <main id="roadmap">
+    <div class="heading"><div><span class="kicker">12-WEEK ROADMAP</span><h2>一关一关，解锁新技能</h2></div><div class="filters"><button class="active" data-filter="all">全部</button><button data-filter="todo">待完成</button><button data-filter="done">已完成</button></div></div>
+    <div class="grid" id="weeksGrid"></div>
+  </main>
+  <section class="destination"><div>🎒</div><article><span class="kicker">YOUR DESTINATION</span><h2>下一站：杭州 AI 应用工程师</h2><p>你的 Vue 与 Node.js 不是过去，而是最有优势的起点。</p></article><aside><span>Vue</span><span>Node.js</span><span>Python</span><span>RAG</span><span>Agent</span><span>FastAPI</span></aside></section>
+  <footer><span>AI 萌芽计划 · 为未来的你认真打卡</span><button id="reset">重置进度</button></footer>
+  <script src="./app.js"></script>
+</body>
+</html>
